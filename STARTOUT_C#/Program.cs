@@ -3,6 +3,7 @@ using STARTOUT_C_.BasicConcerpt.Conditionals;
 using STARTOUT_C_.BasicConcerpt.Loops;
 using STARTOUT_C_.BasicConcerpt.Startup;
 using STARTOUT_C_.BasicConcerpt.Switch;
+using STARTOUT_C_.BasicConcerpt.Method;
 using System;
 using System.IO;
 
@@ -62,6 +63,9 @@ namespace STARTOUT_C_
             ArraysItem.WhilwQue();
             ArraysItem.PlantQue();
             ArraysItem.TwoDimensionalarray();
+
+            // Methods
+            Method.MethodExample();
 
             Console.WriteLine("\n\nPress Enter to exit...");
             Console.ReadLine();
