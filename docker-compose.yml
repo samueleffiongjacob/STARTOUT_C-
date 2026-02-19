@@ -1,0 +1,6 @@
+services:
+  startout_c:
+    image: ${DOCKER_REGISTRY-}startoutc
+    build:
+      context: .
+      dockerfile: STARTOUT_C#/Dockerfile
