@@ -1,6 +1,6 @@
 ﻿# Startup C# Console Application - Learning Guide
 
-## Easier Option: Use Visuals Studio (Recommended for Beginners)
+## Easier Option: Use Visual Studio (Recommended for Beginners)
 
 If you want the easiest setup for C# on Windows, use **Visual Studio** (the full IDE). It includes everything you need to build and run C# projects without extra setup.
 
@@ -115,7 +115,7 @@ Each file needs these because they work independently. Without them, the code wo
 
 This is the **entry point** - where your program starts:
 
-````````markdown
+```
 **Every C# console app needs exactly ONE Main method** - it's the starting point!
 static void Main(string[] args)
   │    │    │         │
@@ -123,13 +123,14 @@ static void Main(string[] args)
   │    │    └─ Name of the method (must be "Main")
   │    └─ Returns nothing (void)
   └─ Can be called without creating an object (static)
+```
 
 ---
-````````markdown
 
 ## 6. Explain each concept in `public static void DataTypesExample()`
-````````markdown
+
 Breaking it down:
+
 - **`public`** = Any code can call this method
 - **`static`** = Call it directly: `Examples.DataTypesExample()` (no need to create an object)
 - **`void`** = Doesn't return a value
@@ -142,21 +143,20 @@ public static void DataTypesExample()
   └─ Accessible from anywhere
 
 ---
-````````markdown
 
 ## 7. Why does `static void Main` start first and the rest is `public static void`?
-````````markdown
+
 Good question! Actually, `Main` **can** be public or private - C# doesn't care:
 
 **Why make other methods `public`?**
+
 - So they can be called from other classes
 - `Main` doesn't need `public` because it's only called by the system, not your code
 
 ---
-````````markdown
 
 ## 8. Is there a `private static void`?
-````````markdown
+
 **YES!** Here's an example:
     // PRIVATE - can ONLY be called inside Examples class
     private static void PrivateHelper()
@@ -164,16 +164,17 @@ Good question! Actually, `Main` **can** be public or private - C# doesn't care:
         Console.WriteLine("This is private - only Examples class can use me!");
     }
 }
-````````markdown
 
 If you tried this in `Program.cs`:
 
 ### Program.cs
+
 - Contains the `Main` method (program entry point)
 - Calls methods from `Examples.cs`
 - Handles user input
 
 ### Examples.cs
+
 - Contains organized example methods
 - `DataTypesExample()` - Shows different data types
 - `ConstantsExample()` - Demonstrates constants
@@ -192,12 +193,15 @@ If you tried this in `Program.cs`:
 ## Common Errors and Solutions
 
 ### Error: "File is locked by another process"
+
 **Solution**: Close all console windows or press `Shift + F5` to stop the running program before rebuilding.
 
 ### Error: "The name 'Examples' does not exist"
+
 **Solution**: Make sure both files are in the same namespace (`namespace HelloWorld`)
 
 ### Error: "More than one entry point"
+
 **Solution**: Only one `Main` method is allowed per project
 
 ---
@@ -216,8 +220,7 @@ GitHub: [C-STARTING-OUT](https://github.com/samueleffiongjacob/C-STARTING-OUT)
 
 ---
 
-**Happy Coding! 🚀**
-
+### Happy Coding! 🚀
 
 ---
 
@@ -253,12 +256,15 @@ GitHub: [C-STARTING-OUT](https://github.com/samueleffiongjacob/C-STARTING-OUT)
 Docker lets you package the app and its dependencies into a portable container so it runs the same everywhere. Follow the steps below if you want to run the app inside Docker.
 
 ### Before You Start (Beginner Checklist)
-1. Install Docker Desktop: https://www.docker.com/products/docker-desktop/
+
+1. Install Docker Desktop: <https://www.docker.com/products/docker-desktop/>
 2. Start Docker Desktop and wait until it says “Docker is running”.
 3. Make sure WSL 2 is enabled (Docker Desktop will guide you if it is not).
 
 ### Step 1: Open Terminal in Visual Studio Code
+
 Open the integrated terminal:
+
 - Go to View > Terminal (or press Ctrl + `)
 - Navigate to your project root directory (copy & paste):
 
@@ -267,6 +273,7 @@ cd "C:\Users\USER\Downloads\code\C#\STARTOUT_C#"
 ```
 
 ### Step 2: Build Your Docker Image
+
 Build the image from your Dockerfile (copy & paste):
 
 ```bash
@@ -274,11 +281,13 @@ docker build -t startout-csharp -f "STARTOUT_C#\Dockerfile" .
 ```
 
 Explanation:
+
 - `-t startout-csharp` = Tags/names your image
 - `-f "STARTOUT_C#\Dockerfile"` = Specifies the Dockerfile location
 - `.` = Build context (current directory)
 
 ### Step 3: Run Your Container (Interactive Mode)
+
 Run your container with interactive terminal support (copy & paste):
 
 ```bash
@@ -286,18 +295,21 @@ docker run -it --rm --name my-csharp-app startout-csharp
 ```
 
 Explanation:
+
 - `-it` = Interactive mode + TTY (allows typing input)
 - `--rm` = Automatically removes container when it stops
 - `--name my-csharp-app` = Names your running container
 - `startout-csharp` = Your image name
 
 ### Step 4: Interact With Your Application
+
 Now you can:
+
 1. Type your name when prompted
 2. Enter your age
 3. See all the examples run
 4. Press Enter to exit
 
 ### Tip
-The first Docker build can take a few minutes because it downloads base images.
 
+The first Docker build can take a few minutes because it downloads base images.
