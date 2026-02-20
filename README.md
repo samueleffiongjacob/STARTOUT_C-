@@ -313,3 +313,27 @@ Now you can:
 ### Tip
 
 The first Docker build can take a few minutes because it downloads base images.
+
+---
+
+## Projects in This Repository
+
+### 1. BasicConcept (STARTOUT_C#)
+Learn fundamental C# concepts:
+- Data Types & Variables
+- Conditionals & Switch
+- Loops & Arrays
+- Methods & Parameters
+
+### 2. AdvanceConcept
+Master advanced C# topics:
+- Object-Oriented Programming (OOP)
+- Collections & Generics
+- LINQ (Language Integrated Query)
+- Async/Await Programming
+- Exception Handling
+- File I/O Operations
+
+## Running Each Project
+
+### BasicConcept:

@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "AdvanceConcept": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
