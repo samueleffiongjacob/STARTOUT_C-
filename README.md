@@ -130,7 +130,7 @@ static void Main(string[] args)
 ## 6. Explain each concept in `public static void DataTypesExample()`
 
 Breaking it down:
-
+```
 - **`public`** = Any code can call this method
 - **`static`** = Call it directly: `Examples.DataTypesExample()` (no need to create an object)
 - **`void`** = Doesn't return a value
@@ -141,7 +141,7 @@ public static void DataTypesExample()
   │      │     └─ Returns nothing
   │      └─ Can be called without creating an object
   └─ Accessible from anywhere
-
+```
 ---
 
 ## 7. Why does `static void Main` start first and the rest is `public static void`?
