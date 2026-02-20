@@ -26,3 +26,11 @@ FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "STARTOUT_C#.dll"]
+
+# DEVELOPMENT - INTERACTIVE MODE
+#FROM base AS final
+#WORKDIR /app
+#COPY --from=publish /app/publish .
+# Use ENTRYPOINT with interactive support for console input
+#ENTRYPOINT ["dotnet", "STARTOUT_C#.dll"]
+# Note: Run with 'docker run -it' to enable interactive console input

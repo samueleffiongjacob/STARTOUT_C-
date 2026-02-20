@@ -66,6 +66,8 @@ namespace STARTOUT_C_
 
             // Methods
             Method.MethodExample();
+            // Parameters and Arguments
+            Parameter.MyMethods();
 
             Console.WriteLine("\n\nPress Enter to exit...");
             Console.ReadLine();
