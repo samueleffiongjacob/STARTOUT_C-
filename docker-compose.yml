@@ -1,6 +1,43 @@
+version: '3.8'
+
 services:
-  startout_c:
-    image: ${DOCKER_REGISTRY-}startoutc
+  # Basic Concepts Project
+  basicconcept:
+    container_name: startout-basic
+    image: ${DOCKER_REGISTRY-}startout-basic:latest
     build:
       context: .
       dockerfile: STARTOUT_C#/Dockerfile
+    stdin_open: true  # Enable interactive mode (-i)
+    tty: true         # Allocate pseudo-TTY (-t)
+    environment:
+      - DOTNET_ENVIRONMENT=Development
+    networks:
+      - csharp-learning
+    volumes:
+      - ./logs/basic:/app/logs
+    restart: unless-stopped
+
+  # Advanced Concepts Project
+  advanceconcept:
+    container_name: startout-advanced
+    image: ${DOCKER_REGISTRY-}startout-advanced:latest
+    build:
+      context: .
+      dockerfile: AdvanceConcept/Dockerfile
+    stdin_open: true  # Enable interactive mode (-i)
+    tty: true         # Allocate pseudo-TTY (-t)
+    environment:
+      - DOTNET_ENVIRONMENT=Development
+    networks:
+      - csharp-learning
+    volumes:
+      - ./logs/advanced:/app/logs
+    restart: unless-stopped
+
+networks:
+  csharp-learning:
+    driver: bridge
+
+volumes:
+  logs:
