@@ -125,9 +125,10 @@ static void Main(string[] args)
   └─ Can be called without creating an object (static)
 
 ---
+````````markdown
 
 ## 6. Explain each concept in `public static void DataTypesExample()`
-
+````````markdown
 Breaking it down:
 - **`public`** = Any code can call this method
 - **`static`** = Call it directly: `Examples.DataTypesExample()` (no need to create an object)
@@ -141,9 +142,10 @@ public static void DataTypesExample()
   └─ Accessible from anywhere
 
 ---
+````````markdown
 
 ## 7. Why does `static void Main` start first and the rest is `public static void`?
-
+````````markdown
 Good question! Actually, `Main` **can** be public or private - C# doesn't care:
 
 **Why make other methods `public`?**
@@ -151,9 +153,10 @@ Good question! Actually, `Main` **can** be public or private - C# doesn't care:
 - `Main` doesn't need `public` because it's only called by the system, not your code
 
 ---
+````````markdown
 
 ## 8. Is there a `private static void`?
-
+````````markdown
 **YES!** Here's an example:
     // PRIVATE - can ONLY be called inside Examples class
     private static void PrivateHelper()
@@ -161,7 +164,7 @@ Good question! Actually, `Main` **can** be public or private - C# doesn't care:
         Console.WriteLine("This is private - only Examples class can use me!");
     }
 }
-
+````````markdown
 
 If you tried this in `Program.cs`:
 
