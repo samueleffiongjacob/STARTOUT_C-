@@ -2,6 +2,7 @@
 {
     public static class OOPExamples
     {
+        // Create a class constructor for the Car class
         public static void RunExamples()
         {
             Console.WriteLine("📦 Creating objects and demonstrating inheritance...\n");
@@ -29,10 +30,11 @@
         }
     }
 
-    // Base class
+    // Base class  
+    // if u don't want other classes to inherit from a class , use the word sealed before the class name
     public abstract class Vehicle
     {
-        public string Brand { get; set; }
+        public string Brand { get; set; } // // Create a field
         public string Model { get; set; }
         public int Year { get; set; }
 

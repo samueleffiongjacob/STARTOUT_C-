@@ -26,6 +26,53 @@ namespace AdvanceConcept
 
             try
             {
+                // 0 Object -Oriented Programming class
+                Console.WriteLine("🔹 0. Object-Oriented Programming (OOP) Class");
+                OopBegining.RunBasicExample();
+                OopBegining.RunAdvancedExample();
+                Cars.CarsExample();
+                Console.WriteLine("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n");
+
+                // 0i Enscapulation
+                Console.WriteLine("🔹 0i. Encapsulation in OOP");
+                Console.WriteLine("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
+                var encapsulation = new Encapsulation();
+                encapsulation.RunExamplesEncap();
+                Console.WriteLine("==================================");
+                var encapsulation2 = new EncapsulationExample();
+                encapsulation2.RunEncapsulationExample();
+                Console.WriteLine("==============================");
+
+                // 0ii Polymorphism note all ways use below to call instance method if u are not using static method
+                Console.WriteLine("🔹 0ii. Polymorphism");
+                Console.WriteLine("====================");
+                var polymorphism = new Polymorphism();
+                polymorphism.RunPolymorphismExample();
+                Console.WriteLine("========== Polymopysim2");
+                var polymorphism2 = new Polymorphism2();
+                polymorphism2.RunPolymorphismExample();
+                Console.WriteLine("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n");
+
+                // 0ii Abstraction
+                Console.WriteLine("🔹 0iii. Abstraction");
+                Console.WriteLine("====================");
+                AbstractandInterface.RunAbstractExample();
+                Console.WriteLine("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n");
+
+                // 0iv Interface
+                Console.WriteLine("🔹 0iv. Interface");
+                Console.WriteLine("====================");
+                InterfaceExample.RunInterfaceExample();
+                Console.WriteLine("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n Multiple Interface");
+                MultipleInterfaceExample.RunMultipleInterfaceExample();
+                Console.WriteLine("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n");
+
+                // 0v Enum and Struct
+                Console.WriteLine("🔹 0v. Enum and Struct");
+                Console.WriteLine("====================");
+                EnumExample.RunEnumExample();
+                Console.WriteLine("==================================");
+
                 // 1. Object-Oriented Programming
                 Console.WriteLine("🔹 1. Object-Oriented Programming (OOP)");
                 Console.WriteLine("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
