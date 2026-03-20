@@ -13,7 +13,7 @@
 
     class Animal // Base class (parent)
     {
-        public void animalSound()
+        public void AnimalSound()
         {
             Console.WriteLine("The animal makes a sound");
         }
@@ -21,7 +21,7 @@
 
     class Pig : Animal // Derived class (child)
     {
-        public void animalSound() // Method overriding
+        public void AnimalSound() // Method overriding
         {
             Console.WriteLine("The pig says: wee wee");
         }
@@ -42,9 +42,9 @@
             Animal myAnimal = new Animal();  // Create a Animal object
             Animal myPig = new Pig();  // Create a Pig object
             Animal myDog = new Dog();  // Create a Dog object
-            myAnimal.animalSound();
-            myPig.animalSound();
-            myDog.animalSound();
+            myAnimal.AnimalSound();
+            myPig.AnimalSound();
+            myDog.AnimalSound();
 
             Console.WriteLine("===========end of polymorphism example 1===========");
         }
