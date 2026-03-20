@@ -100,13 +100,17 @@ namespace AdvanceConcept
                 // 5. Exception Handling
                 Console.WriteLine("🔹 5. Exception Handling");
                 Console.WriteLine("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
+                LearnExceptions.RunTheExceptionExample();
                 ExceptionExamples.RunExamples();
+
                 Console.WriteLine();
 
                 // 6. File I/O Operations
                 Console.WriteLine("🔹 6. File I/O Operations");
                 Console.WriteLine("━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━");
                 FileIOExamples.RunExamples();
+                Console.WriteLine("MY FILE EXAMPLE");
+                FileStart.RunFileStartExample();
                 Console.WriteLine();
 
                 Console.WriteLine("\n✅ Congratulations! You've completed all advanced examples!");

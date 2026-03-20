@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-
-namespace STARTOUT_C_.BasicConcerpt.Loops
+﻿namespace STARTOUT_C_.BasicConcerpt.Loops
 {
     class Sbreak
     {

@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace STARTOUT_C_.BasicConcerpt.Startup
+﻿namespace STARTOUT_C_.BasicConcerpt.Startup
 {
     class Startup
     {
         public static void DataTypesExample()
         {
+            
             Console.WriteLine("\n=== DATA TYPES EXAMPLE ===");
             int WholeNumber = 120;
             string Anytext = "Name or other Things";
@@ -20,6 +17,7 @@ namespace STARTOUT_C_.BasicConcerpt.Startup
 
         public static void ConstantsExample()
         {
+            
             Console.WriteLine("\n=== CONSTANTS EXAMPLE ===");
             const int Num = 12;
             const string Text = "constant text";
@@ -32,6 +30,7 @@ namespace STARTOUT_C_.BasicConcerpt.Startup
 
         public static void StringOperationsExample()
         {
+            
             Console.WriteLine("\n=== STRING OPERATIONS EXAMPLE ===");
             const string Text = "constant text";
             Console.WriteLine("String length: " + Text.Length);
@@ -52,7 +51,10 @@ namespace STARTOUT_C_.BasicConcerpt.Startup
 
             // String Interpolation
             string fullName = $"My full name is {firstName}{lastName}";
+            
             Console.WriteLine("Interpolation: " + fullName);
         }
+
+
     }
 }

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-//using static System.Runtime.InteropServices.JavaScript.JSType;
-
-namespace STARTOUT_C_.BasicConcerpt.Loops
+﻿namespace STARTOUT_C_.BasicConcerpt.Loops
 {
     class LoopsWhile
     {
@@ -57,8 +52,13 @@ namespace STARTOUT_C_.BasicConcerpt.Loops
 
                 The example below will print the numbers 0 to 4:
              */
+            
             for (int i = 0; i < 5; i++)
             {
+                /* for above example, statement 1 is int i = 0 (setup/initialie(start)), 
+                 * statement 2 is i < 5 (conditioal)
+                 * and statement 3 is i++ iteration (increment)
+                 */
                 Console.WriteLine("print the numbers 0 to 4: \n" + i);
             }
 
@@ -72,7 +72,7 @@ namespace STARTOUT_C_.BasicConcerpt.Loops
             Another Example
             This example will only print even values between 0 and 10:
             */
-
+            
             for (int j = 0; j <= 10; j = j + 2)
             {
                 Console.WriteLine("this print even number in 0-10 \n" + j);
@@ -89,6 +89,7 @@ namespace STARTOUT_C_.BasicConcerpt.Loops
              */
 
             // outer loop
+      
             for (int i = 0; i < 5; ++i)
             {
                 Console.WriteLine("outer: \n" + i); // Excutes 2 times
@@ -127,6 +128,7 @@ namespace STARTOUT_C_.BasicConcerpt.Loops
         // let use the private method in main method
         public static void LoopFour()
         {
+
             ForLoop();
         }
     }

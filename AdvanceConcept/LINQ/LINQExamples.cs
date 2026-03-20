@@ -51,11 +51,29 @@
                 new Person("David", 35, "Manager")
             };
 
-            var developers = people.Where(p => p.Role == "Developer")
+            var designer = people.Where(p => p.Role == "Designer")
                                    .Select(p => p.Name);
-            
-            Console.WriteLine("Developers:");
-            foreach (var dev in developers)
+
+            IEnumerable<string> personQuery =
+                from person in people
+                where person.Role == "Developer"
+                orderby person.Name descending
+                select $"the developers {person.Name}";
+
+            // Convert the query result to a list and print the developers
+            List<string> personList = personQuery.ToList();
+            foreach (var person in personList)
+            {
+                Console.WriteLine($"  👨‍💻 {person}");
+            }
+
+            // for each loop to print the developers
+            foreach (var person in personQuery)
+            {
+                Console.WriteLine($"  👨‍💻 {person}");
+            }
+            // Alternatively, using method syntax to print the developers
+            foreach (var dev in designer)
             {
                 Console.WriteLine($"  👨‍💻 {dev}");
             }
@@ -64,7 +82,10 @@
             Console.WriteLine($"\nAverage Age: {averageAge:F1} years");
         }
     }
+    // IEnumerable<T> extension methods like Where, Select, OrderBy, etc. are defined in the System.Linq namespace and can be used with any collection that implements IEnumerable<T>.
 
+
+    // abtract class Person
     public class Person
     {
         public string Name { get; set; }

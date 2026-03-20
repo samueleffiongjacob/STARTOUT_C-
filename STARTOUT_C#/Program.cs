@@ -4,73 +4,120 @@ using STARTOUT_C_.BasicConcerpt.Loops;
 using STARTOUT_C_.BasicConcerpt.Startup;
 using STARTOUT_C_.BasicConcerpt.Switch;
 using STARTOUT_C_.BasicConcerpt.Method;
-using System;
-using System.IO;
-
-
 namespace STARTOUT_C_
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to C# Programming! \n");
+            try
+            {
+                Console.Clear();
+                Console.WriteLine("Welcome to C# Programming! \n");
 
-            // User Input Example
+                // User Input Example
 
-            Console.WriteLine("What's your name? ");
-            string name = Console.ReadLine();
-            Console.WriteLine("What's your age? ");
-            int age = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("What's your name? ");
+                string? name = Console.ReadLine();
+                Console.WriteLine("What's your age? ");
+                int age = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine($"Hello {name}!");
-            Console.WriteLine($"You're learning C# at age: {age}");
-            age += 1;
-            Console.WriteLine($"Next year you'll be {age}");
-            Console.WriteLine("Let's build something great!\n");
+                Console.WriteLine($"Hello {name}!");
+                Console.WriteLine($"You're learning C# at age: {age}");
+                age += 1;
+                Console.WriteLine($"Next year you'll be {age}");
+                Console.WriteLine("Let's build something great!\n");
 
+                Clear();
+                // Clean startup
+                Startup.DataTypesExample();
+                
+                Clear();
+                // Constants Example
+                Startup.ConstantsExample();
+                
+                Clear();
+                // String Operations Example
+                Startup.StringOperationsExample();
 
-            // Clean startup
-            Startup.DataTypesExample();
-            // Constants Example
-            Startup.ConstantsExample();
-            // String Operations Example
-            Startup.StringOperationsExample();
+                Clear();
+                // Run conditions examples
+                Conditions.ConditionsExample();
+                
+                Clear();
+                Conditions.ShortHandIfElseExample();
+                
+                Clear();
+                Conditions.ShortHandIfElseMultipleExample();
 
-            // Run conditions examples
-            Conditions.ConditionsExample();
-            Conditions.ShortHandIfElseExample();
-            Conditions.ShortHandIfElseMultipleExample();
+                Clear();
+                // Run Switchapps
+                Switchapp.SwitchDefault();
+                
+                Clear();
+                Switchapp.SwitchDefault();
 
-            // Run Switchapps
-            Switchapp.SwitchDefault();
-            Switchapp.SwitchDefault();
+                Clear();
+                // Run Loop
+                LoopsWhile.LoopOne();
+                
+                Clear();
+                LoopsWhile.LoopTwo();
+                
+                Clear();
+                LoopsWhile.Loopthree();
+                
+                Clear();
+                LoopsWhile.NestedLoop();
+                
+                Clear();
+                LoopsWhile.LoopFour();
 
-            // Run Loop
-            LoopsWhile.LoopOne();
-            LoopsWhile.LoopTwo();
-            LoopsWhile.Loopthree();
-            LoopsWhile.NestedLoop();
-            LoopsWhile.LoopFour();
+                Clear();
+                // breake and continue
+                Sbreak.CombineExample();
+                
+                Clear();
+                Sbreak.CountExample();
+                
+                Clear();
+                Sbreak.RunBreakExample();
 
-            // breake and continue
-            Sbreak.CombineExample();
-            Sbreak.CountExample();
-            Sbreak.RunBreakExample();
+                Clear();
+                // arrays
+                ArraysItem.ItemArrays();
+                
+                Clear();
+                ArraysItem.WhilwQue();
+                
+                Clear();
+                ArraysItem.PlantQue();
+                
+                Clear();
+                ArraysItem.TwoDimensionalarray();
 
-            // arrays
-            ArraysItem.ItemArrays();
-            ArraysItem.WhilwQue();
-            ArraysItem.PlantQue();
-            ArraysItem.TwoDimensionalarray();
-
-            // Methods
-            Method.MethodExample();
-            // Parameters and Arguments
-            Parameter.MyMethods();
+                Clear();
+                // Methods
+                Method.MethodExample();
+                
+                Clear();
+                // Parameters and Arguments
+                Parameter.MyMethods();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"\nAn error occurred: {ex.Message}");
+            }
 
             Console.WriteLine("\n\nPress Enter to exit...");
             Console.ReadLine();
+        }
+
+        public static void Clear()
+        { 
+            Console.WriteLine("\nPress Enter to clear the screen and continue...");
+            Console.ReadLine();
+            Console.Clear();
         }
     }
 }

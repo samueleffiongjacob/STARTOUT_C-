@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace STARTOUT_C_.BasicConcerpt.Conditionals
+﻿namespace STARTOUT_C_.BasicConcerpt.Conditionals
 {
     class Conditions
     {
@@ -22,6 +18,7 @@ namespace STARTOUT_C_.BasicConcerpt.Conditionals
                   // block of code to be executed if the condition1 is false and condition2 is False
                 }
           */
+            
             int time = 9;
             if (time < 10)
             {
@@ -39,6 +36,7 @@ namespace STARTOUT_C_.BasicConcerpt.Conditionals
 
         public static void ShortHandIfElseExample()
         {
+          
             /*
                 * Short Hand If...Else (Ternary Operator)
                 There is also a short-hand if else, which is known as the ternary operator because it 
@@ -47,6 +45,7 @@ namespace STARTOUT_C_.BasicConcerpt.Conditionals
 
                 variable = (condition) ? expressionTrue : expressionFalse;
             */
+            
             int time = 17;
             string result = (time < 18) ? "Good day." : "Good evening.";
             Console.WriteLine(result);
@@ -54,6 +53,7 @@ namespace STARTOUT_C_.BasicConcerpt.Conditionals
 
         public static void ShortHandIfElseMultipleExample()
         {
+            
             int time = 22;
             string result = (time < 10) ? "Good morning." :
                 (time < 20) ? "Good day." : "Good evening.";

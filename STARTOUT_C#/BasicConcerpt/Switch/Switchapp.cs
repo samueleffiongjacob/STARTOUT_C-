@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-//using System.Text.RegularExpressions;
-//using static System.Net.Mime.MediaTypeNames;
-
-namespace STARTOUT_C_.BasicConcerpt.Switch
+﻿namespace STARTOUT_C_.BasicConcerpt.Switch
 {
     class Switchapp
     {
@@ -32,6 +26,7 @@ namespace STARTOUT_C_.BasicConcerpt.Switch
                    The break and default keywords will be described later in this chapter
                    The example below uses the weekday number to calculate the weekday name:
             */
+            
             int day = 4;
             switch (day)
             {
@@ -77,6 +72,7 @@ namespace STARTOUT_C_.BasicConcerpt.Switch
         */
         public static void SwitchDefault()
         {
+            
             int days = 4;
             switch (days)
             {

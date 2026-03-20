@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace STARTOUT_C_.BasicConcerpt.Method
+﻿namespace STARTOUT_C_.BasicConcerpt.Method
 {
     class Method
     {
@@ -49,6 +45,7 @@ namespace STARTOUT_C_.BasicConcerpt.Method
 
         public static void MethodExample()
         {
+            
             Console.WriteLine("\n=== METHOD EXAMPLES ===");
 
             // Calling method without parameters

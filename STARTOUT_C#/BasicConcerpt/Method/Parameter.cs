@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace STARTOUT_C_.BasicConcerpt.Method
+﻿namespace STARTOUT_C_.BasicConcerpt.Method
 {
     class Parameter
     {
         static void MyMethod(string fname)
         {
+            
             /*
              * Parameters and Arguments
                Information can be passed to methods as parameter. Parameters act as variables inside the method.
@@ -118,15 +115,18 @@ namespace STARTOUT_C_.BasicConcerpt.Method
 
         public static void MyMethods()
         {
+            
             MyMethod("Liam");
             MyMethod("Jenny");
             MyMethod("Anja");
 
+            
             Console.WriteLine("Multiple Parameters \n");
             MultipleParameters("Samuel Effiong", 25);
             MultipleParameters("Effiong Jacob", 20);
             MultipleParameters("Samuel Effiong Jacob", 15);
 
+            
             Console.WriteLine("Default Parameter Value \n");
             DefaultParameter("Nigeria");
             DefaultParameter("germany");
@@ -134,23 +134,28 @@ namespace STARTOUT_C_.BasicConcerpt.Method
             DefaultParameter("usa");
 
             // Return Values
+            
             Console.WriteLine("Return Values \n");
             Console.WriteLine(MethodMy(3));
 
             // returns the sum of a method's two parameters:
+            
             Console.WriteLine("return 2 parameter \n");
             Console.WriteLine(MethodMy1(3, 4));
 
             // store the return value of a method in a variable:
+            
             Console.WriteLine("store the return value of a method in a variable \n");
             int result = MethodMy2(5, 6);
             Console.WriteLine(result);
 
             //Named Arguments
+            
             Console.WriteLine("Named Arguments \n");
             NamedArguments(child3: "Samuel", child1: "Effiong", child2: "Jacob", age: 20);
 
             // Method Overloading
+            
             Console.WriteLine("Method Overloading \n");
             int myNum1 = PlusMethodInt(8, 5);
             double myNum2 = PlusMethodDouble(4.3, 6.26);
@@ -158,6 +163,7 @@ namespace STARTOUT_C_.BasicConcerpt.Method
             Console.WriteLine("Double: " + myNum2);
 
             // Method Overloading with same name
+            
             Console.WriteLine("Method Overloading with same name \n");
             int myNum3 = PlusMethod(8, 5);
             double myNum4 = PlusMethod(4.3, 6.26);
