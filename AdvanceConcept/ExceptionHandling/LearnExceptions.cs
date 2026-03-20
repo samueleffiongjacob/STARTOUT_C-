@@ -29,7 +29,7 @@
             }
             catch (Exception e)
             {
-                Console.WriteLine("Something went wrong. Samuel"); 
+                Console.WriteLine($"Something went wrong. Samuel: {e.Message}");
             }
         }
 
@@ -47,7 +47,7 @@
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine("Something went wrong.");
+                    Console.WriteLine($"Something went wrong. Samuel: {e.Message}");
                 }
                 finally
                 {
@@ -73,7 +73,7 @@
             RunExceptionExample();
             Console.WriteLine("Finished running the exception example.");
             RunFinallyExample();
-            Console.WriteLine("chec ArithmeticException");
+            Console.WriteLine("Checking ArithmeticException");
             checkAge(20); // check to know why it stops at 15
             Console.WriteLine("ended the exception example...");
         }
