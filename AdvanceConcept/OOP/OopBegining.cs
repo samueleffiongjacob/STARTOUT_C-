@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace AdvanceConcept.OOP
+﻿namespace AdvanceConcept.OOP
 {
     public class OopBegining
     {

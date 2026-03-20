@@ -1,4 +1,4 @@
-﻿namespace AdvanceConcept.LINQ
+﻿ namespace AdvanceConcept.LINQ
 {
     public static class LINQExamples
     {
@@ -52,7 +52,7 @@
             };
 
             var designer = people.Where(p => p.Role == "Designer")
-                                   .Select(p => p.Name);
+                                      .Select(p => p.Name);
 
             IEnumerable<string> personQuery =
                 from person in people

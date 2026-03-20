@@ -1,12 +1,9 @@
-﻿using System.Collections.Generic;
-
-namespace AdvanceConcept.Collections
+﻿namespace AdvanceConcept.Collections
 {
     public static class CollectionsExamples
     {
         public static void RunExamples()
         {
-            Console.WriteLine("📚 Working with Collections...\n");
 
             // List<T>
             Console.WriteLine("List Example:");

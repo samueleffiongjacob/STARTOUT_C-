@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace AdvanceConcept.OOP
+﻿namespace AdvanceConcept.OOP
 {
     /*
      * C# Enums
@@ -65,7 +61,10 @@ namespace AdvanceConcept.OOP
             Console.WriteLine($"Parsing 'December' to Month enum: {System.Enum.Parse(typeof(Month), "December")}");
             
             int StatusValue = (int) Status.Completed;
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine($"The integer value of Status.Completed is: {StatusValue}");
+            // terminal color
+            Console.ForegroundColor = ConsoleColor.Green;
         }
     }
 }

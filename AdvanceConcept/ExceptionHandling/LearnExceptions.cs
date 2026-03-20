@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace AdvanceConcept.ExceptionHandling
+﻿namespace AdvanceConcept.ExceptionHandling
 {
 
     // Exceptions - Try..Catch
